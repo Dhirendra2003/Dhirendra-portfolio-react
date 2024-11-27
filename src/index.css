@@ -10,7 +10,7 @@
     @apply hover:underline hover:scale-110 hover:text-cyan-200 ease-in-out duration-500 cursor-pointer transition-all;
   }
   .grad-bg {
-    background-image: url("src/assets/Welcome.png");
+    background-image: url("../src/assets/Welcome.png");
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(20, 20, 20);
