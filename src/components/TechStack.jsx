@@ -43,7 +43,7 @@ const imgArray = [img1,
 const languageDiv = (src, ind) => {
   return (
     <div key={ind} className='flex place-content-center'>
-      <img src={src} className=' lang-img transition-all ease-in-out duration-500 h-32 w-32 object-contain  hover:bg-white drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
+      <img src={src} className=' lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
     </div>
   )
 }
@@ -53,9 +53,9 @@ function TechStack() {
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
         <div className='flex place-content-center flex-wrap items-center gap-8 justify-center  p-10'>
           <div className='flex gap-6 flex-col m-auto'>
-            <h1 className='drop-shadow-xl underline text-6xl font-bold text-white'>I'm <br />Dhirendra <br />
+            <h1 className='drop-shadow-xl underline text-6xl font-bold text-white border-l-8 border-cyan-400 p-1'>I'm <br />Dhirendra <br />
               Shinde</h1>
-            <p className='text-white text-right  font-semibold text-xl'>
+            <p className='text-white text-right  font-semibold text-xl border-r-8 border-white p-1'>
               <span className='bg-cyan-500 p-2'>A full stack Dev </span> <br /> 
               <span className='bg-cyan-600 p-2'>proficient in MERN ,</span> <br />
               <span className='bg-cyan-700 p-2'>React native & UI Designer </span> <br />
@@ -63,9 +63,9 @@ function TechStack() {
               <span className='bg-cyan-900 p-2'>Data Analyst </span><br />
             </p>
           </div>
-          <img src={heroimg} alt="" className='h-[500px] drop-shadow-2xl w-[500px] m-auto' />
+          <img src={heroimg} alt="" className='md:h-[500px] drop-shadow-2xl md:w-[500px] m-auto xs:w-auto' />
         </div>
-        <div className='grid grid-cols-6 gap-4 m-auto'>
+        <div className='grid md:grid-cols-6 xs:grid-cols-3 gap-4 m-auto'>
           {imgArray.map((img, index) => languageDiv(img, index))}
         </div>
 
