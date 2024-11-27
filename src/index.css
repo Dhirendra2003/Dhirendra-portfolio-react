@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-icon {
+    @apply border-2 p-2 rounded-full ease-in-out duration-300 hover:bg-gray-800 hover:scale-105 border-white hover:border-cyan-200 hover:text-cyan-200;
+  }
+  .nav-text {
+    @apply hover:underline hover:scale-110 hover:text-cyan-200 ease-in-out duration-500 cursor-pointer transition-all;
+  }
+  .grad-bg {
+    background-image: url("src/assets/Welcome.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(20, 20, 20);
+    background-size: contain;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+  }
+
+  .parallax {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    /* background-color: red; */
+    background-image: url("../src/assets/snap emoji.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+
+    padding: 0;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .inner-element {
+      transform: translateZ(60px);
+      transform-style: preserve-3d;
+      z-index: 20;
+    }
+  }
+  .stars {
+    margin: auto;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-blend-mode: difference; */
+  }
+  #circle {
+    z-index: 10;
+  }
+
+  .lang-img{
+    z-index: +500;
+  }
+
+  .stars::before {
+    background-image: url("../src/assets/Frame 224.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 365%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 0 0;
+    width: 400%;
+    height: 400%;
+    scale: 150%;
+    filter: brightness(120%);
+  }
+  @keyframes slowBlink {
+    0% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+}
+
+@font-face {
+  font-family: "League_Spartan_black";
+  src: local("League_Spartan_black"),
+    url("./assets/font/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "League_Spartan_black", sans-serif;
+}
+
+.root-story {
+  font-family: Arial, sans-serif;
+
+  .tab-demo.react-tabs__tab-panel--selected {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+:root {
+  --default-stripe-bg-color: #077407;
+  --default-stripe-color: #015f01;
+}
+
+.background-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--default-stripe-color),
+    var(--default-stripe-color) 35px,
+    var(--default-stripe-bg-color) 35px,
+    var(--default-stripe-bg-color) 70px
+  );
+}
+
+#circle {
+  width: 50px;
+
+  height: 50px;
+
+  background-color: #ff0000;
+  border-radius: 50%;
+
+  position: fixed;
+  mix-blend-mode: difference;
+
+  pointer-events: none; /* Ensure the ball doesn't interfere with other elements */
+  transition: transform 0.1s ease-out; /* Optional: Add a smooth transition effect */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: yellow;
+}
