@@ -21,7 +21,7 @@ function App() {
         <TechStack />
       </div>
 
-      <div className='pt-30 bg-black'>
+      <div className='pt-30  bg-black'>
         <Testgsap />
       </div>
 

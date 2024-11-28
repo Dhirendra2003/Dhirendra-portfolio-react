@@ -104,6 +104,8 @@
 
 body {
   font-family: "League_Spartan_black", sans-serif;
+  overflow-x: hidden;
+
 }
 
 .root-story {
