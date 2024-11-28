@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 const Introduction = () => {
 
   return (
-    <div className='min-h-[80vh] overflow-hidden flex '>
+    <div className='min-h-[100vh] overflow-hidden flex '>
       <Tilt //options={defaultOptions}  
         className='parallax md:w-[500px] md:h-[500px] xs:w-[300px] xs:h-[500px] m-auto  '
         perspective={700}

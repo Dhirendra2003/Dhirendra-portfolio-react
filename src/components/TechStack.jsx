@@ -43,13 +43,13 @@ const imgArray = [img1,
 const languageDiv = (src, ind) => {
   return (
     <div key={ind} className='flex place-content-center'>
-      <img src={src} className=' lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
+      <img src={src} className=' md:lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
     </div>
   )
 }
 function TechStack() {
   return (
-    <div className='w-full flex py-40 place-content-center '>
+    <div className='w-full backdrop-hue-rotate-60 backdrop-blur-xl   flex py-40 place-content-center '>
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
         <div className='flex place-content-center flex-wrap items-center gap-8 justify-center  p-10'>
           <div className='flex gap-6 flex-col m-auto'>

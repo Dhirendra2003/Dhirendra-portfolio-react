@@ -53,6 +53,7 @@
   }
   #circle {
     z-index: 10;
+    @apply xs:invisible md:visible
   }
 
   .lang-img{
