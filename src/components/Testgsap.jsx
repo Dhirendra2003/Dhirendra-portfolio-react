@@ -84,7 +84,7 @@ function Testgsap() {
 
   return (
     <div
-      className="flex h-[200vh]  justify-center items-baseline  top-0 sticky bg-black"
+      className="flex h-[300vh]  justify-center items-baseline  top-0 sticky bg-black"
     >
       <canvas
         id="image-sequence"
