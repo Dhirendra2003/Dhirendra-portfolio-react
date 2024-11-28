@@ -16,7 +16,7 @@ function Testgsap() {
       urls, // Array of image URLs
       canvas: "#image-sequence", // <canvas> object to draw images to
       scrollTrigger: {
-        start: "75% 100%",
+        start: "65% 100%",
         end: "90% 100%",
         scrub: true, // important!
       },
