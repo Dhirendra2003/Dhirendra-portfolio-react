@@ -17,7 +17,7 @@ function Testgsap() {
       canvas: "#image-sequence", // <canvas> object to draw images to
       scrollTrigger: {
         start: "75% 100%",
-        end: "85% 100%",
+        end: "90% 100%",
         scrub: true, // important!
       },
     });
@@ -84,13 +84,13 @@ function Testgsap() {
 
   return (
     <div
-      className="flex h-[100vh]  justify-center items-baseline  top-0 sticky bg-black"
+      className="flex h-[200vh]  justify-center items-baseline  top-0 sticky bg-black"
     >
       <canvas
         id="image-sequence"
         height={Number(dimension*0.42*0.7).toFixed()}
         width={Number(dimension*0.7).toFixed()}
-        className="bg-black top-20 sticky"
+        className="bg-black top-40 sticky"
       />
     </div>
   );
