@@ -10,7 +10,7 @@ function Testgsap() {
     const frameCount = 50;
     const urls = new Array(frameCount)
       .fill()
-      .map((_, i) => `https://raw.githubusercontent.com/Dhirendra2003/portfolio-react/refs/heads/master/src/assets/00${i+10}.webp `);
+      .map((_, i) => `https://raw.githubusercontent.com/Dhirendra2003/portfolio-react/refs/heads/master/src/assets/car/00${i+10}.webp `);
 
     imageSequence({
       urls, // Array of image URLs
