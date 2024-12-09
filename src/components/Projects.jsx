@@ -3,7 +3,7 @@ import React from 'react'
 import tt from "../assets/ttimg.png"
 import bid from "../assets/bidbazar.jpg"
 import pj3 from "../assets/jobPortal.jpg"
-import pj4 from "../assets/powerBIDB.png"
+import power from "../assets/powerBIDB.png"
 import adhipuri from "../assets/adhipuri.jpg"
 import pj6 from "../assets/paper trade.jpg"
 
@@ -39,9 +39,13 @@ function Projects() {
         <Carousel img={pj6}  link={'https://paper-trade-front-end.vercel.app/'} title={"PaperTrade -practice Trading App  "} techstack={"React JS ,Tailwind CSS , Node JS , Mongo DB ,Yahoo Finance API "} objective={"Login , Register ,Place Trades , Sell /Settel Holdings, History , Subsciption ,Change Graph timeline and style"}/>
 
 
-        <Carousel img={pj4}  link={'http://google.com'} title={"techtorch portfolio "} techstack={"techtorch portfolio "} objective={"techtorch portfolio "}/>
-        <Carousel img={adhipuri}  link={'https://adhipurifashion.42web.io/'} title={"Buisness portfolio  "} techstack={"WordPress ,Elementor , canva   "} objective={"to improve online presence of the Buisness  "}/>
-        <Carousel img={tt} link={'https://www.techtorch.online/'} title={"organization  portfolio "} techstack={"html ,css , js "} objective={"to improve online presence of the organization "}/>
+        <Carousel img={power}   title={"HR Analytics Dashboard "} techstack={"Power BI"} objective={"Data visualization ,selective filtering  "}/>
+
+
+        <Carousel img={adhipuri}  link={'https://adhipurifashion.42web.io/'} title={"Buisness portfolio  "} techstack={"WordPress ,Elementor , canva   "} objective={"Animations ,Blogs page ,responsive design ,parallax animations "}/>
+
+
+        <Carousel img={tt} link={'https://www.techtorch.online/'} title={"organization  portfolio "} techstack={"html ,css , js "} objective={"Parallax scroll , popup animations "}/>
       </div>
 
     </div>)
