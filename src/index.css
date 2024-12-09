@@ -22,6 +22,9 @@
     @apply text-white hover:font-thin hover:scale-150 hover:px-1 transition-all ease-in-out duration-100;
   }
 
+  .text-hover-shrink-black {
+    @apply text-black hover:font-thin hover:scale-150 hover:px-1 transition-all ease-in-out duration-100;
+  }
   .parallax {
     transform-style: preserve-3d;
     transform: perspective(1000px);

@@ -29,7 +29,7 @@ function App() {
       <div  id='section4'>
         <Projects />
       </div>
-      <div className='backdrop-hue-rotate-180 backdrop-blur-xl'>
+      <div className='bg-white'>
         <Grid />
       </div>
     </div>
