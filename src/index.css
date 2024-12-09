@@ -18,6 +18,9 @@
     background-attachment: fixed;
     background-blend-mode: screen;
   }
+  .text-hover-shrink {
+    @apply text-white hover:font-thin hover:scale-150 hover:px-1 transition-all ease-in-out duration-100;
+  }
 
   .parallax {
     transform-style: preserve-3d;
@@ -53,15 +56,38 @@
   }
   #circle {
     z-index: 10;
-    @apply xs:invisible md:visible
+    @apply xs:invisible md:visible;
   }
 
-  .lang-img{
+  .lang-img {
     z-index: +500;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.49);
   }
+  @keyframes grow-height {
+    0% {
+      width: 0;
+    }
+    100% {
+      widtht: 300px;
+    }
+  }
+  
+  .hover-show {
+    /* display: none; */
+    width: 0 ;/* Initial height */
+    /* overflow: hidden; Hide content during the animation */
+    transition: width 1s ease-in-out; /* Smooth height transition */
+  }
+  
+  .carousel:hover .hover-show {
+    /* display: block; */
+    width:600px; /* Final height on hover */
+    
+    transition: width 1s ease-in-out;
+  }
+  
 
   .stars::before {
     background-image: url("../src/assets/Frame 224.png");
@@ -96,6 +122,8 @@
   }
 }
 
+
+
 @font-face {
   font-family: "League_Spartan_black";
   src: local("League_Spartan_black"),
@@ -105,7 +133,8 @@
 body {
   font-family: "League_Spartan_black", sans-serif;
   overflow-x: hidden;
-
+  background-color: black;
+  max-width: 100vw;
 }
 
 .root-story {

@@ -30,7 +30,7 @@ function Testgsap() {
 
     // Add scaling effect to the canvas
     gsap.to("#image-sequence", {
-      scale: 1.5, // Final scale (adjust as needed)
+      scale: 1.2, // Final scale (adjust as needed)
       scrollTrigger: {
         start: "65% 100%",
         end: "90% 100%",
@@ -99,7 +99,7 @@ function Testgsap() {
   };
 
   return (
-    <div className="flex  h-[300vh] justify-center items-baseline top-0 sticky bg-black">
+    <div className="flex  h-[300vh] justify-center items-baseline  top-0 sticky overflow-x-clip bg-black">
       <canvas
         id="image-sequence"
         height={Number(dimension * 0.42 * 0.7).toFixed()}
