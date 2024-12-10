@@ -1,4 +1,4 @@
-import grad from "../assets/welcome(2).png";
+import grad from "../assets/welcome (2).png";
 import rolling from "../assets/rolling.webm"
 
 function Bye() {
