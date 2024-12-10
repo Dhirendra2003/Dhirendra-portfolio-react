@@ -12,7 +12,7 @@ import Carousel from './Carousel'
 function Projects() {
   return (
     <div className='z-50 min-h-screen flex items-center flex-col bg-rainbow  '>
-      <div className='flex md:gap-8  xs:gap-4 md:text-4xl xs:text-2xl place-content-center items-center font-bold drop-shadow-xl mb-48 mb-10  sticky top-20 bg-neutral-800 w-screen z-50'>
+      <div className='flex md:gap-8  xs:gap-4 md:text-4xl xs:text-2xl place-content-center items-center font-bold drop-shadow-xl mb-48 p-2  sticky md:top-20 xs:top-28 bg-neutral-800 w-screen z-50'>
         <div className='flex'>
           <h1 className='text-hover-shrink'>M </h1>
           <h1 className='text-hover-shrink'>y </h1>

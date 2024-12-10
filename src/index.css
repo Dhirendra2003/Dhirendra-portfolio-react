@@ -11,10 +11,10 @@
   }
   .grad-bg {
     background-image: url("../src/assets/Welcome.png");
-    background-position: center;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-color: rgb(20, 20, 20);
-    background-size: contain;
+    background-size: contain 50%;
     background-attachment: fixed;
     background-blend-mode: screen;
   }

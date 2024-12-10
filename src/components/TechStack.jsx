@@ -43,7 +43,7 @@ const imgArray = [img1,
 const languageDiv = (src, ind) => {
   return (
     <div key={ind} className='flex place-content-center'>
-      <img src={src} className=' md:lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
+      <img src={src} className=' md:lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white/50 drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
     </div>
   )
 }
