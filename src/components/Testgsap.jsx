@@ -8,13 +8,13 @@ function Testgsap() {
   const dimension = window.innerWidth;
 
   useEffect(() => {
-    const frameCount = 50;
+    const frameCount = 120;
     const urls = new Array(frameCount)
       .fill()
       .map(
         (_, i) =>
-          `https://raw.githubusercontent.com/Dhirendra2003/portfolio-react/refs/heads/master/src/assets/car/00${
-            i + 10
+          `https://raw.githubusercontent.com/Dhirendra2003/portfolio-react/refs/heads/master/src/assets/car/0${
+            i+100
           }.webp`
       );
 
