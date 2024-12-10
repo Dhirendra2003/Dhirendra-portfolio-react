@@ -189,7 +189,7 @@ html {
 }
 
 .bg-rainbow {
-  background: url(./assets/rainbowbg.jpg);
+  background: url("../src/assets/rainbowbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,7 +197,7 @@ html {
 }
 
 .bg-linemesh {
-  background: url(./assets/linemesh.jpg);
+  background: url("../src/assets/linemesh.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +205,7 @@ html {
 }
 
 .bg-whitelinemesh {
-  background: url(./assets/gradientswirl.jpg);
+  background: url("..src/assets/gradientswirl.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,7 +220,7 @@ html {
   background-color: white;
 }
 .bg-star {
-  background: url(./assets/vectorstar.svg);
+  background: url("../src/assets/vectorstar.svg");
   background-position: 120% 120%;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -228,7 +228,7 @@ html {
 }
 .bg-star-blue {
   background: 
-    url(./assets/vectorstar.svg) no-repeat, /* Vector image */
+    url("../src/assets/vectorstar.svg") no-repeat, /* Vector image */
     linear-gradient(to right, rgb(29, 78, 216), rgb(192, 132, 252)); /* Gradient */
   background-position: -20% 120%; /* Position the vector */
   background-repeat: no-repeat; /* Avoid repeating the vector */
