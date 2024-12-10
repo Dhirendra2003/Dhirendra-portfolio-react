@@ -1,6 +1,6 @@
-import React from 'react'
-import grad from '../assets/welcome.png'
+import grad from "../assets/welcome(2).png";
 import rolling from "../assets/rolling.webm"
+
 function Bye() {
   return (
     <div className='min-h-screen bg-neutral-900 flex flex-col justify-center items-center'>
