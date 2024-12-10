@@ -1,5 +1,5 @@
 import React from 'react'
-import grad from '../assets/Welcome.png '
+import grad from '../assets/welcome.png'
 import rolling from "../assets/rolling.webm"
 function Bye() {
   return (
