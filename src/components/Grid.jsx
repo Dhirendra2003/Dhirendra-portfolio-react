@@ -1,68 +1,30 @@
-import { PanelsLeftBottom } from "lucide-react";
-import { Gallery } from "react-grid-gallery";
+import { PanelsLeftBottom, Rotate3D } from "lucide-react";
 import skf from '../assets/skf.png'
+import buttet from "../assets/grid/bullet-min.jpg"
+import camero from "../assets/grid/camero-min.jpg"
+import civic from "../assets/grid/civic-min.jpg"
+import lykan from "../assets/grid/lykan-min.jpg"
+import mustang from "../assets/grid/mustang-min.jpg"
+import sunset from "../assets/grid/sunset-min.jpg"
+import van from "../assets/grid/van-min.jpg"
+import yamaha from "../assets/grid/yamaha-min.jpg"
 
-
-export const images = [
-  {
-    src: 'https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/9172099f483ae52c86be58ccf87ee77d/detailed',
-    width: 1877,
-    height: 1060,
-    thumbnailCaption: "Royal Enfield Classic 350",
-  },
-  {
-    src: "https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/cea07639dbbe8c516f99a5f6962006b9/detailed",
-    width: 1892,
-    height: 1062,
-    thumbnailCaption: "Yahamha R1M",
-  },
-  {
-    src: "https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/56d8b475524c8969b1fb2d1f95eaa945/detailed",
-    width: 1886,
-    height: 1051,
-    thumbnailCaption: "VolksWagen Vintage Van ",
-  },
-  {
-    src: 'https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/7d438b464afcfd1b822c7513e15bebd6/detailed',
-    width: 1889,
-    height: 1059,
-    thumbnailCaption: "Honda Civic type R",
-  },
-  {
-    src: "https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/db1f09a6e1eff51175e00fba3394e814/detailed",
-    width: 1888,
-    height: 1063,
-    thumbnailCaption: "Animated sunset",
-  },
-  {
-    src: "https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/1094836ff6baaa2fb35be68a7576a737/detailed",
-    width: 1894,
-    height: 907,
-    thumbnailCaption: "Chevrolet Camaro",
-  },
-  {
-    src: 'https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/2959be9ffd13c2516b911ffb1c8d3ce5/detailed',
-    width: 1892,
-    height: 1167,
-    thumbnailCaption: "Lykan Hypersport",
-  },
-  {
-    src: "https://res-console.cloudinary.com/digbazqis/media_explorer_thumbnails/cdcfe87e59d9ac520506ebd9a57f067b/detailed",
-    width: 1885,
-    height: 1052,
-
-    thumbnailCaption: "Ford Mustang 1969",
-  },
-];
-
+function Slide(props){
+  return (
+    <div className="shadow-2xl p-2 hover:scale-105 hover:z-40 bg-white  duration-300 ease-in-out transition-all rounded-lg">
+      <img src={props.src}  />
+      <p>{props.cap}</p>
+    </div>
+  )
+}
 
 function Grid() {
   return (
-    <div className="flex min-h-screen py-32 flex-col place-content-center gap-32   z-50">
-      <div className=' sticky md:top-20 xs:top-28 py-2 bg-white w-[95vw] flex md:gap-8  xs:gap-4 md:text-5xl xs:text-2xl place-content-center items-center font-bold  z-50 '>
+    <div className="flex min-h-screen  flex-col place-content-center gap-32   z-50">
+      <div className='mb-28 sticky md:top-20 xs:top-28 py-2 bg-purple-100 w-[100%] flex md:gap-8  xs:gap-4 md:text-4xl xs:text-2xl place-content-center items-center font-bold  z-50 '>
         <div className='flex'>
-          <h1 className='text-hover-shrink-black'>M </h1>
-          <h1 className='text-hover-shrink-black'>y </h1>
+          <h1 className='text-hover-shrink-black'>3 </h1>
+          <h1 className='text-hover-shrink-black'>D </h1>
           <h1 className='md:p-2 xs:p-1'>{" "} </h1>
           <h1 className='text-hover-shrink-black'>C </h1>
           <h1 className='text-hover-shrink-black'>r </h1>
@@ -74,16 +36,23 @@ function Grid() {
           <h1 className='text-hover-shrink-black'>n </h1>
           <h1 className='text-hover-shrink-black'>s </h1>
         </div>
-        <PanelsLeftBottom className='text-sky-400 hover:rotate-90 md:h-24 md:w-24 xs:h-12 xs:w-12 transition-all ease-in-out duration-300 ' />
+        <Rotate3D className='text-purple-500 hover:rotate-90 md:h-18 md:w-18 xs:h-12 xs:w-12 transition-all ease-in-out duration-300 ' />
       </div>
-      <div className="w-[60%] m-auto">
-        <Gallery defaultContainerWidth={5000} images={images} enableImageSelection={false} />
+      <div className="w-[80%] m-auto grid xs:grid-cols-2 md:grid-cols-3 md:p-10  md:gap-8 xs:gap-2 ">
+       <Slide  src={buttet} cap={"Royal Enfield Classic 350"}/>
+       <Slide  src={camero} cap={"Chevrolet Camaro"}/>
+       <Slide  src={civic} cap={"Honda Civic type R"}/>
+       <Slide  src={lykan} cap={"Lykan Hypersport"}/>
+       <Slide  src={mustang} cap={"Ford Mustang 1969"}/>
+       <Slide  src={sunset} cap={"Animated sunset"}/>
+       <Slide  src={van} cap={"VolksWagen Vintage Van"}/>
+       <Slide  src={yamaha} cap={"Yahamha R1M"}/>
         
       </div>
-      <div className="flex flex-col items-center m-10 gap-4">
-      <h1 className="text-4xl text-black font-bold">View More @ 👇 </h1>
+      <div className="flex flex-col items-center m-10 gap-4 ">
+      <h1 className="text-4xl text-yellow-300 bg-black p-1 font-bold ">View More @ sketchfab 👇 </h1>
         <a href="https://sketchfab.com/shindedhirendra780" target="blank" >
-          <img src={skf} width={600}  className="rounded-xl hover:scale-105 transition-all duration-300 ease-in-out drop-shadow-xl border-2 border-black"/>
+          <img src={skf} width={600}  className="rounded-xl hover:scale-105 transition-all duration-300 ease-in-out drop-shadow-xl border-2 border-white"/>
         </a>
         </div>
     </div>

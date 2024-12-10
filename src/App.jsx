@@ -7,6 +7,10 @@ import ScrollImageSequence from './components/CarScroll'
 import Testgsap from './components/Testgsap'
 import Projects from './components/Projects'
 import Grid from './components/Grid'
+import Experience from './components/Experience'
+import OffGrid from './components/OffGrid'
+import Bye from './components/Bye'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,19 +22,31 @@ function App() {
       <div className='w-full place-content-center flex flex-col' id='section1'>
         <Introduction />
       </div>
-
-      <div id='section2'>
-        <TechStack />
+      <div className='backdrop-blur-lg backdrop-hue-rotate-60'>
+        <div id='section2'>
+          <TechStack />
+        </div>
+        <div id='exp'>
+          <Experience />
+        </div>
       </div>
-
       <div id='section3' className='pt-30  bg-black'>
         <Testgsap />
       </div>
-      <div  id='section4'>
+      <div id='proj'>
         <Projects />
       </div>
-      <div className='bg-white'>
+      <div id='3d' className='bg-purple-500/30'>
         <Grid />
+      </div>
+      <div className='bg-white'>
+        <OffGrid/>
+      </div>
+      <div>
+        <Bye/>
+      </div>
+      <div id='contact'>
+        <Footer/>
       </div>
     </div>
   )

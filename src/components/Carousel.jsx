@@ -3,10 +3,10 @@ import React from 'react'
 
 function Carousel(props) {
   return (
-    <div className='carousel max-w-[90vw] md:border-4 xs:border-[4px]   border-white/20 md:h-[30vw] m-auto   shadow-xl rounded-xl overflow-hidden md:flex '>
+    <div className='carousel max-w-[90vw] md:border-4 xs:border-[4px]   border-white/40 md:h-[30vw] m-auto   shadow-xl rounded-xl overflow-hidden md:flex '>
 
       <img src={props.img} className='h-[100%] m-auto  object-contain rounded-xl' />
-      <div className='bg-white/10 flex flex-col place-content-center  text-cyan-200  md:hover-show  md:p-0 xs:p-4'>
+      <div className='bg-black/30 backdrop-blur-md flex flex-col place-content-center  text-cyan-200  md:hover-show  md:p-0 xs:p-4'>
         <div className='p-5 max-w-[400px] m-auto h-[100%] justify-around flex flex-col text-xl '>
           <p className=' font-bold text-2xl capitalize underline'>
             {/* title */}

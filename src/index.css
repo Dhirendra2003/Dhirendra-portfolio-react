@@ -18,6 +18,8 @@
     background-attachment: fixed;
     background-blend-mode: screen;
   }
+
+  
   .text-hover-shrink {
     @apply text-white hover:font-thin hover:scale-150 hover:px-1 transition-all ease-in-out duration-100;
   }
@@ -76,21 +78,20 @@
       widtht: 300px;
     }
   }
-  
+
   .hover-show {
     /* display: none; */
-    width: 0 ;/* Initial height */
+    width: 0; /* Initial height */
     /* overflow: hidden; Hide content during the animation */
     transition: width 1s ease-in-out; /* Smooth height transition */
   }
-  
+
   .carousel:hover .hover-show {
     /* display: block; */
-    width:600px; /* Final height on hover */
-    
+    width: 600px; /* Final height on hover */
+
     transition: width 1s ease-in-out;
   }
-  
 
   .stars::before {
     background-image: url("../src/assets/Frame 224.png");
@@ -124,8 +125,6 @@
     }
   }
 }
-
-
 
 @font-face {
   font-family: "League_Spartan_black";
@@ -187,4 +186,51 @@ html {
 
 *::selection {
   background-color: yellow;
+}
+
+.bg-rainbow {
+  background: url(./assets/rainbowbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-linemesh {
+  background: url(./assets/linemesh.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-whitelinemesh {
+  background: url(./assets/gradientswirl.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-spline{
+  background: url("./assets/Splines .png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-color: white;
+}
+.bg-star {
+  background: url(./assets/vectorstar.svg);
+  background-position: 120% 120%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: rgb(64 64 64);
+}
+.bg-star-blue {
+  background: 
+    url(./assets/vectorstar.svg) no-repeat, /* Vector image */
+    linear-gradient(to right, rgb(29, 78, 216), rgb(192, 132, 252)); /* Gradient */
+  background-position: -20% 120%; /* Position the vector */
+  background-repeat: no-repeat; /* Avoid repeating the vector */
+  background-size: 50%, cover; /* Size of vector and gradient */
 }

@@ -49,7 +49,7 @@ const languageDiv = (src, ind) => {
 }
 function TechStack() {
   return (
-    <div className='w-full backdrop-hue-rotate-60 backdrop-blur-xl   flex py-40 place-content-center '>
+    <div className='w-full    flex py-40 place-content-center '>
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
         <div className='flex place-content-center flex-wrap items-center gap-8 justify-center  p-10'>
           <div className='flex gap-6 flex-col m-auto'>
