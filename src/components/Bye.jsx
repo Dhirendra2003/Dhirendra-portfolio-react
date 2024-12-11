@@ -3,7 +3,7 @@ import rolling from "../assets/rolling.webm"
 
 function Bye() {
   return (
-    <div className='min-h-screen bg-neutral-900 flex flex-col justify-center items-center'>
+    <div className='min-h-screen bg-star-dark flex flex-col justify-center items-center'>
       <div className='flex xs:flex-col md:flex-row mt-36'>
         <div className='flex w-min'>
           <img src={grad} className='w-96 mix-blend-screen absolute brightness-50 hover:brightness-90 transition-all duration-700 ease-in-out' />

@@ -226,6 +226,17 @@ html {
   background-size: 50%;
   background-color: rgb(64 64 64);
 }
+
+.bg-star-dark {
+  background: 
+    linear-gradient(rgba(23, 23, 23, 0.95), rgba(23, 23, 23, 0.95)), /* Overlay */
+    url("../src/assets/vectorstar.svg");
+  background-position: -50% 30%;
+  background-repeat:round;
+  background-size: 60%;
+  background-color: #171717;
+}
+
 .bg-star-blue {
   background: 
     url("../src/assets/vectorstar.svg") no-repeat, /* Vector image */

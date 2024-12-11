@@ -11,6 +11,8 @@ import Experience from './components/Experience'
 import OffGrid from './components/OffGrid'
 import Bye from './components/Bye'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
+import ScrollUp from './components/ScrollUp'
 
 
 function App() {
@@ -47,6 +49,12 @@ function App() {
       </div>
       <div id='contact'>
         <Footer/>
+      </div>
+      <div className='fixed -right-12 md:top-48 xs:top-60 z-50'>
+        <Contact/>
+      </div>
+      <div onClick={()=>{window.scrollTo(0, 0)}} className='fixed bottom-4 md:right-4 xs:right-2 md:scale-75 xs:scale-50 '>
+        <ScrollUp/>
       </div>
     </div>
   )
