@@ -1,13 +1,13 @@
-import { PanelsLeftBottom, Rotate3D } from "lucide-react";
-import skf from '../assets/skf.png'
-import buttet from "../assets/grid/bullet-min.jpg"
-import camero from "../assets/grid/camero-min.jpg"
-import civic from "../assets/grid/civic-min.jpg"
-import lykan from "../assets/grid/lykan-min.jpg"
-import mustang from "../assets/grid/mustang-min.jpg"
-import sunset from "../assets/grid/sunset-min.jpg"
-import van from "../assets/grid/van-min.jpg"
-import yamaha from "../assets/grid/yamaha-min.jpg"
+import { Rotate3D } from "lucide-react";
+import skf from '../assets/skf.webp'
+import buttet from "../assets/grid/bullet-min.webp"
+import camero from "../assets/grid/camero-min.webp"
+import civic from "../assets/grid/civic-min.webp"
+import lykan from "../assets/grid/lykan-min.webp"
+import mustang from "../assets/grid/mustang-min.webp"
+import sunset from "../assets/grid/sunset-min.webp"
+import van from "../assets/grid/van-min.webp"
+import yamaha from "../assets/grid/yamaha-min.webp"
 
 function Slide(props){
   return (

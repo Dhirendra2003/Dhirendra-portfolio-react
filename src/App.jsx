@@ -1,9 +1,6 @@
-import React from 'react'
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
 import TechStack from './components/TechStack'
-// import CarScroll from './components/CarScroll'
-import ScrollImageSequence from './components/CarScroll'
 import Testgsap from './components/Testgsap'
 import Projects from './components/Projects'
 import Grid from './components/Grid'
@@ -28,7 +25,7 @@ function App() {
         <div id='section2'>
           <TechStack />
         </div>
-        <div id='exp'>
+        <div id='exp' className='bg-linemesh'>
           <Experience />
         </div>
       </div>
@@ -42,19 +39,19 @@ function App() {
         <Grid />
       </div>
       <div className='bg-white'>
-        <OffGrid/>
+        <OffGrid />
       </div>
       <div>
-        <Bye/>
+        <Bye />
       </div>
       <div id='contact'>
-        <Footer/>
+        <Footer />
       </div>
-      <div className='fixed -right-12 md:top-48 xs:top-60 z-50'>
-        <Contact/>
+      <div className='fixed -right-9 md:top-48 xs:top-60 z-50'>
+        <Contact />
       </div>
-      <div onClick={()=>{window.scrollTo(0, 0)}} className='fixed bottom-4 md:right-4 xs:right-2 md:scale-75 xs:scale-50 '>
-        <ScrollUp/>
+      <div onClick={() => { window.scrollTo(0, 0) }} className='fixed bottom-4 md:right-4 xs:right-2 md:scale-75 xs:scale-50 '>
+        <ScrollUp />
       </div>
     </div>
   )

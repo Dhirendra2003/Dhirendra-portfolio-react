@@ -1,4 +1,4 @@
-import pray from "../assets/prayemoji.png"
+import pray from "../assets/prayemoji.webp"
 import Tilt from 'react-parallax-tilt';
 
 
@@ -6,7 +6,7 @@ const Introduction = () => {
 
   return (
     <div className='min-h-[100vh] overflow-hidden flex '>
-      <Tilt //options={defaultOptions}  
+      <Tilt 
         className='parallax md:w-[500px] md:h-[500px] xs:w-[300px] xs:h-[500px] m-auto -top-20 relative '
         perspective={700}
         tiltReverse={true}

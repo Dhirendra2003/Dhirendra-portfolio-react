@@ -1,8 +1,8 @@
-import React from 'react'
+import { Waypoints } from 'lucide-react'
 
 function Experience() {
-  return (
-    <div className='min-h-screen py-40 text-yellow-300  bg-linemesh drop-shadow-sm'>
+  return (<>      <h1 className='text-3xl text-yellow-300 font-semibold text-center bg-neutral-800 sticky md:top-20 xs:top-28 z-50 p-4 flex w-full place-content-center gap-4 '>My Journey <Waypoints className='text-white w-6 h-6  hover:rotate-45 transition-all duration-300 ease-in-out top-1 relative '/></h1>
+    <div className='min-h-screen py-40 text-yellow-300  bg-black/50 drop-shadow-sm'>
       <div className='md:p-4 bg-yellow-300 w-8 h-8 rounded-full m-auto'></div>
       <div className='flex h-[100%]'>
         <div className='border-r-2 border-yellow-300 w-[50%] h-auto   flex flex-col justify-around items-end border-dashed'>
@@ -49,6 +49,8 @@ function Experience() {
       </div>
       <div className='md:p-4 bg-yellow-300 w-8 h-8 rounded-full m-auto'></div>
     </div>
+    </>
+
   )
 }
 

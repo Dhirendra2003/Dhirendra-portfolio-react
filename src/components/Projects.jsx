@@ -1,11 +1,10 @@
 import { PanelsLeftBottom } from 'lucide-react'
-import React from 'react'
-import tt from "../assets/ttimg.png"
-import bid from "../assets/bidbazar.jpg"
-import pj3 from "../assets/jobPortal.jpg"
-import power from "../assets/powerBIDB.png"
-import adhipuri from "../assets/adhipuri.jpg"
-import pj6 from "../assets/paper trade.jpg"
+import tt from "../assets/ttimg.webp"
+import bid from "../assets/bidbazar.webp"
+import pj3 from "../assets/jobPortal.webp"
+import power from "../assets/powerBIDB.webp"
+import adhipuri from "../assets/adhipuri.webp"
+import pj6 from "../assets/paper trade.webp"
 
 import Carousel from './Carousel'
 

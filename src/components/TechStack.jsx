@@ -1,5 +1,4 @@
-import React from 'react'
-import heroimg from '../assets/hero1.png'
+import heroimg from '../assets/hero1.webp'
 import img1 from "../assets/techstackicons/1.png"
 import img2 from "../assets/techstackicons/2.png"
 import img3 from "../assets/techstackicons/3.png"
@@ -17,8 +16,8 @@ import img14 from "../assets/techstackicons/14.png"
 import img15 from "../assets/techstackicons/15.png"
 import img16 from "../assets/techstackicons/16.png"
 import img17 from "../assets/techstackicons/17.png"
-
 import img18 from "../assets/techstackicons/18.png"
+import { Scissors } from 'lucide-react'
 
 // const images=require.context('../assets/techstackicons')
 const imgArray = [img1,
@@ -43,17 +42,19 @@ const imgArray = [img1,
 const languageDiv = (src, ind) => {
   return (
     <div key={ind} className='flex place-content-center'>
-      <img src={src} className=' md:lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-white/50 drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
+      <img src={src} className=' md:lang-img transition-all ease-in-out duration-500 md:h-32 md:w-32 xs:h-16 xs:w-16 object-contain  hover:bg-black/50 drop-shadow-lg p-3  rounded-xl hover:scale-110' alt={"tech stack"} />
     </div>
   )
 }
 function TechStack() {
   return (
-    <div className='w-full    flex py-40 place-content-center '>
+    <>
+      <h1 className='text-3xl text-orange-300 font-semibold text-center bg-cyan-800 sticky md:top-20 xs:top-28 z-50 p-4 flex w-full place-content-center gap-4 '>About Me and my Skills <Scissors className='text-white w-6 h-6 hover:rotate-45 transition-all duration-300 ease-in-out top-1 relative '/></h1>
+    <div className='w-full    flex flex-col py-40 place-content-center '>
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
         <div className='flex place-content-center flex-wrap items-center gap-8 justify-center  p-10'>
           <div className='flex gap-6 flex-col m-auto'>
-            <h1 className='drop-shadow-xl underline text-6xl font-bold text-white border-l-8 border-cyan-400 p-1'>I'm <br />Dhirendra <br />
+            <h1 className='text-white drop-shadow-xl underline text-6xl font-bold text border-l-8 border-cyan-400 p-1'>I'm <br />Dhirendra <br />
               Shinde</h1>
             <p className='text-white text-right  font-semibold text-xl border-r-8 border-white p-1'>
               <span className='bg-cyan-500 p-2'>A full stack Dev </span> <br /> 
@@ -71,6 +72,7 @@ function TechStack() {
 
       </div>
     </div>
+    </>
   )
 }
 
