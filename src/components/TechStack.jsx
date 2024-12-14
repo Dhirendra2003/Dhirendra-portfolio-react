@@ -52,8 +52,8 @@ function TechStack() {
       <h1 className='text-3xl text-orange-300 font-semibold text-center bg-cyan-800 sticky md:top-20 xs:top-28 z-50 p-4 flex w-full place-content-center gap-4 '>About Me and my Skills <Scissors className='text-white w-6 h-6 hover:rotate-45 transition-all duration-300 ease-in-out top-1 relative '/></h1>
     <div className='w-full    flex flex-col py-40 place-content-center '>
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
-        <div className='flex place-content-center flex-wrap items-center gap-8 justify-center  p-10'>
-          <div className='flex gap-6 flex-col m-auto'>
+        <div className='w-[80%] m-auto flex place-content-center flex-wrap items-center gap-20 justify-center  p-10'>
+          <div className='flex gap-6 flex-col my-auto ml-auto'>
             <h1 className='text-white drop-shadow-xl underline text-6xl font-bold text border-l-8 border-cyan-400 p-1'>I'm <br />Dhirendra <br />
               Shinde</h1>
             <p className='text-white text-right  font-semibold text-xl border-r-8 border-white p-1'>
@@ -64,7 +64,7 @@ function TechStack() {
               <span className='bg-cyan-900 p-2'>Data Analyst </span><br />
             </p>
           </div>
-          <img src={heroimg} alt="" className='md:h-[500px] drop-shadow-2xl md:w-[500px] m-auto xs:w-auto' />
+          <img src={heroimg} alt="" className='md:h-[500px] drop-shadow-2xl md:w-[500px] my-auto mr-auto xs:w-auto' />
         </div>
         <div className='grid md:grid-cols-6 xs:grid-cols-3 gap-4 m-auto'>
           {imgArray.map((img, index) => languageDiv(img, index))}
