@@ -10,12 +10,43 @@ import Bye from './components/Bye'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import ScrollUp from './components/ScrollUp'
+import { useEffect, useState } from 'react'
+import { HashLoader } from 'react-spinners'
 
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showLoader,setShowLoader]=useState();
 
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoading(false); // Stop showing the loader when everything is loaded
+    };
+
+    // Wait for all resources to load
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  useEffect(()=>{
+    if(isLoading){
+      const fade=setTimeout(()=>{
+        setShowLoader(true);
+      },1000);
+      return ()=>clearTimeout(fade)
+    }
+  },[isLoading])
 
   return (
+    <>
+    {isLoading && 
+    <div className={`bg-black w-screen h-screen fixed z-[5000] ${showLoader && "opacity-0"} flex transition-all duration-1000 ease-linear`}><HashLoader color="#00ffe1"  size={100} className='m-auto' /></div>
+    }
+
+    
     <div className=' grad-bg min-h-[100vh] '>
       <Navbar />
       <div className='w-full place-content-center flex flex-col' id='section1'>
@@ -47,13 +78,14 @@ function App() {
       <div id='contact'>
         <Footer />
       </div>
-      <div className='fixed md:-right-9 xs:-right-10 top-60  xs:scale-90 z-50'>
+      <div className='fixed md:-right-9 xs:-right-10 top-60 md:scale-110 xs:scale-90 z-50'>
         <Contact />
       </div>
       <div onClick={() => { window.scrollTo(0, 0) }} className='fixed md:bottom-4 xs:bottom-0 md:right-4 xs:right-0 md:scale-75 xs:scale-50 '>
         <ScrollUp />
       </div>
     </div>
+    </>
   )
 }
 

@@ -49,7 +49,7 @@ const languageDiv = (src, ind) => {
 function TechStack() {
   return (
     <>
-      <h1 className='md:text-3xl xs:text-2xl  text-orange-300 font-semibold text-center bg-cyan-950 sticky md:top-20 xs:top-28 z-50 p-4 flex w-full place-content-center gap-4 '>About Me and my Skills <Scissors className='text-white w-6 h-6 hover:rotate-45 transition-all duration-300 ease-in-out top-1 relative '/></h1>
+      <h1 className='md:text-3xl xs:text-2xl  text-orange-300 font-semibold text-center bg-neutral-900 sticky md:top-20 xs:top-28 z-50 p-4 flex w-full place-content-center gap-4 '>About Me and my Skills <Scissors className='text-white w-6 h-6 hover:rotate-45 transition-all duration-300 ease-in-out top-1 relative '/></h1>
     <div className='w-full    flex flex-col py-40 place-content-center '>
       <div className='flex p-10 gap-10 justify-center flex-col place-content-center '>
         <div className='w-[80%] m-auto flex place-content-center flex-wrap items-center gap-20 justify-center  p-10'>
