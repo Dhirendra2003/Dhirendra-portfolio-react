@@ -47,10 +47,10 @@ function App() {
       <div id='contact'>
         <Footer />
       </div>
-      <div className='fixed -right-9 md:top-48 xs:top-60 z-50'>
+      <div className='fixed md:-right-9 xs:-right-10 top-60  xs:scale-90 z-50'>
         <Contact />
       </div>
-      <div onClick={() => { window.scrollTo(0, 0) }} className='fixed bottom-4 md:right-4 xs:right-2 md:scale-75 xs:scale-50 '>
+      <div onClick={() => { window.scrollTo(0, 0) }} className='fixed md:bottom-4 xs:bottom-0 md:right-4 xs:right-0 md:scale-75 xs:scale-50 '>
         <ScrollUp />
       </div>
     </div>

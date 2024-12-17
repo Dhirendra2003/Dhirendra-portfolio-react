@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={`z-[2000] ${scrolled ? 'bg-white/40 backdrop-blur-xl backdrop-brightness-50' : 'bg-black'} sticky top-0 text-white flex justify-between md:px-10 xs:px-4 md:py-5 xs:py-2 flex-wrap transition-all duration-1000 ease-in-out`}>
       <div className="flex flex-wrap my-auto md:mr-auto ">
-        <ul className="md:flex md:flex-row xs:grid grid-cols-2  md:gap-6 xs:gap-1 text-2xl xs:text-xl font-bold ">
+        <ul className="md:flex md:flex-row xs:grid grid-cols-2  md:gap-6 xs:gap-0 md:text-2xl xs:text-lg font-bold ">
 
           <a href="#section1"><li className="nav-text" >Intro </li></a>
           <a href="#section2"><li className="nav-text">Skills</li></a>
@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
 
       <div className="flex my-auto md:ml-auto">
-        <ul className="md:flex gap-4 xs:grid grid-cols-2  ">
+        <ul className="md:flex md:gap-4 xs:gap-2 xs:grid grid-cols-2  ">
           <a target="blank" href="https://github.com/Dhirendra2003"> <li className="nav-icon"><Github /></li></a>
           <a target="blank" href="https://www.linkedin.com/in/dhirendra-shinde-b9a826215/"> <li className="nav-icon"><Linkedin /></li></a>
           <a target="blank" href="https://www.instagram.com/pixel_renderer_8bit/"> <li className="nav-icon"><Instagram /></li></a>

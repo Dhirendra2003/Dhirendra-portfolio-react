@@ -1,11 +1,19 @@
-import  { useEffect } from "react";
+import  { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Testgsap() {
+  const [mobile,setMobile]=useState(["25% 100%","45% 100%"])
   const dimension = window.innerWidth;
+  const height=window.innerHeight;
+  useEffect(()=>{
+    if(dimension<height){
+      setMobile(["40% 100%","50% 100%"])
+      console.log("mobile device")
+    }
+  },[])
 
   useEffect(() => {
     const frameCount = 120;
@@ -22,8 +30,8 @@ function Testgsap() {
       urls, // Array of image URLs
       canvas: "#image-sequence", // <canvas> object to draw images to
       scrollTrigger: {
-        start: "25% 100%",
-        end: "45% 100%",
+        start: mobile[0],
+        end: mobile[1],
         scrub: true, // important!
       },
     });
@@ -32,8 +40,8 @@ function Testgsap() {
     gsap.to("#image-sequence", {
       scale: 1.2, // Final scale (adjust as needed)
       scrollTrigger: {
-        start: "65% 100%",
-        end: "90% 100%",
+        start:mobile[0],
+        end: mobile[1],
         scrub: true,
       },
     });
@@ -99,7 +107,7 @@ function Testgsap() {
   };
 
   return (
-    <div className="flex  h-[300vh] justify-center items-baseline  top-0 sticky overflow-x-clip bg-black">
+    <div className="flex  md:h-[300vh] xs:h-[200vh] justify-center items-baseline  top-0 sticky overflow-x-clip bg-black">
       <canvas
         id="image-sequence"
         height={Number(dimension * 0.42 * 0.7).toFixed()}

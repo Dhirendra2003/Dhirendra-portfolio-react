@@ -20,7 +20,7 @@ function Bye() {
           <video src={rolling} className='w-96 mix-blend-screen' autoPlay muted loop />
         </div>
       </div>
-      <h1 className='text-white mt-48 text-xl'>Thanks for Exploring !!!</h1>
+      <h1 className='text-white mt-48 mb-20 text-xl'>Thanks for Exploring !!!</h1>
     </div>
   )
 }

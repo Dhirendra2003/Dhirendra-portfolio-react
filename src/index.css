@@ -4,7 +4,7 @@
 
 @layer components {
   .nav-icon {
-    @apply border-2 p-2 rounded-full ease-in-out duration-300 hover:bg-gray-800 hover:scale-105 border-white hover:border-cyan-200 hover:text-cyan-200;
+    @apply border-2 p-2 rounded-full ease-in-out duration-300 hover:bg-gray-800 hover:scale-105 border-white hover:border-cyan-200 hover:text-cyan-200 xs:scale-90 md:scale-100;
   }
   .nav-text {
     @apply hover:underline hover:scale-110 hover:text-cyan-200 ease-in-out duration-500 cursor-pointer transition-all;
