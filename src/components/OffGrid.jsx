@@ -44,7 +44,7 @@ function OffGrid() {
       </div>
      
 
-      <a href="https://drive.google.com/file/d/16Vm0WCdQxhWW281Hc74b4HgZQWyCvSMl/view?usp=sharing" target='blank' className="relative  items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full border-2  md:scale-100 xs:scale-75  group w-min text-nowrap m-auto mt-20">
+      <a href="https://drive.google.com/file/d/1Kagx7IFzGA2wNXmTzjtluhztTwBj_v56/view?usp=drive_link" target='blank' className="relative  items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full border-2  md:scale-100 xs:scale-75  group w-min text-nowrap m-auto mt-20">
 <span className="w-32 h-32  translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
 <span className="absolute top-0 left-0 w-[110%] h-48 -mt-1 transition-all duration-500 ease-in-out  -translate-x-80 -translate-y-24 bg-gradient-to-r from-sky-500 to-purple-500 opacity-100 group-hover:-translate-x-2"></span>
 <span className="relative w-full text-left text-black transition-colors duration-500 ease-in-out group-hover:text-white font-semibold md:text-2xl xs:text-xl">Download My Resume</span>
