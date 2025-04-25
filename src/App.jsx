@@ -43,7 +43,7 @@ function App() {
   return (
     <>
     {isLoading && 
-    <div className={`bg-black w-screen h-screen fixed z-[5000] ${showLoader && "opacity-0 -z-[50]"} flex transition-all duration-1000 ease-linear`}><HashLoader color="#00ffe1"  size={100} className='m-auto' /></div>
+    <div className={`bg-black w-screen h-screen fixed z-[5000] ${showLoader && "opacity-0 -z-[5000]"} flex transition-all duration-1000 ease-linear`}><HashLoader color="#00ffe1"  size={100} className='m-auto' /></div>
     }
 
     
