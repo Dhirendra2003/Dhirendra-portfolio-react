@@ -68,8 +68,8 @@ function App() {
       }
 
       {showRedirectPopup && (
-        <div className="fixed inset-0 z-[6000] flex items-center justify-center bg-black/70 px-4 backdrop-blur-md scale-150">
-          <div className="relative w-full max-w-lg rounded-3xl border border-cyan-300/30 bg-[#0f1115]/95 p-6 text-white shadow-[0_0_50px_rgba(0,255,225,0.18)] md:p-8">
+        <div className="fixed inset-0 z-[6000] w-full h-full flex items-center justify-center bg-black/70 px-4 backdrop-blur-md scale-150 sm:scale-100">
+          <div className="relative w-full lg:max-w-[50%] md:max-w-[50%] xs:max-w-[50%] max-w-lg rounded-3xl border border-cyan-300/30 bg-[#0f1115]/95 p-6 text-white shadow-[0_0_50px_rgba(0,255,225,0.18)] md:p-8">
             <button
               type="button"
               onClick={() => setShowRedirectPopup(false)}
@@ -81,7 +81,7 @@ function App() {
             <p className="text-sm uppercase tracking-[0.35em] text-cyan-300/80">Notice</p>
             <h1 className="mt-3  font-semibold text-4xl text-cyan-200">This is old portfolio</h1>
             <p className="mt-4 max-w-md  text-white/75 text-xl">
-              You&apos;ll be redirected to the new link in <span className="font-bold text-cyan-300">{redirectCountdown}</span> second{redirectCountdown === 1 ? '' : 's'}.
+              You&apos;ll be redirected to the new link in <span className="font-bold text-cyan-300 max-w-4">{redirectCountdown}</span> second{redirectCountdown === 1 ? '' : 's'}.
             </p>
             <a
               href={newPortfolioLink}
